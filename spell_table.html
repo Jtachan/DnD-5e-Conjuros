@@ -1,0 +1,43 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DnD 5 edición</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>DnD 5 edición</h1>
+
+    <!-- GitHub Repository Input -->
+    <div class="repo-input">
+        <label for="repo-url">GitHub Repository URL:</label>
+        <input type="text" id="repo-url" placeholder="https://github.com/username/repo">
+        <button id="load-data">Load Data</button>
+    </div>
+
+    <!-- Filters Section -->
+    <div class="filters" id="filters-container">
+        <!-- Name Filter -->
+        <div class="filter-group">
+            <label for="name-filter">Name contains:</label>
+            <input type="text" id="name-filter" placeholder="Search by name...">
+        </div>
+
+        <!-- Level Filter -->
+        <div class="filter-group">
+            <label for="level-min">Level (Min):</label>
+            <select id="level-min">
+                <option value="">Any</option>
+                <!-- Options 0-9 -->
+            </select>
+        </div>
+
+        <!-- More filters... -->
+    </div>
+
+    <!-- Results Section -->
+    <div id="results" class="results"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
